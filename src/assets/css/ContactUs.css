@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.Contact {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.Contact h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.Contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    animation: slideInFromRight 1s ease-out;
+}
+
+.Contact input[type='text'],
+.Contact input[type='email'],
+.Contact textarea {
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    animation: zoomIn 1s ease-out;
+}
+
+.Contact textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.Contact input[type='text']:focus,
+.Contact input[type='email']:focus,
+.Contact textarea:focus {
+    border-color: #4CAF50;
+}
+
+.Contact button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    animation: bounceIn 1s ease-out;
+}
+
+.Contact button:hover {
+    background-color: #45a049;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}

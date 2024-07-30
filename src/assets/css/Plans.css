@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.plan {
+    height: auto;
+    padding: 20px;
+}
+
+.planlist1, .planlist2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.planItem {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Adds space between items on smaller screens */
+}
+
+.planItem:hover {
+    transform: scale(1.05);
+}
+
+.planPic {
+    height: 200px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-position: center;
+    overflow: hidden; /* Ensures the image fits within the container */
+}
+
+.planPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.planText h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.planText p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.viewDetails, .buyNow {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.viewDetails {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.viewDetails:hover {
+    background-color: #45a049;
+}
+
+.buyNow {
+    background-color: #ff9800;
+    color: white;
+}
+
+.buyNow:hover {
+    background-color: #e68a00;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .planItem {
+        width: 45%; /* Adjusts width for tablets and larger phones */
+    }
+}
+
+@media (max-width: 768px) {
+    .planItem {
+        width: 100%; /* Adjusts width for smaller tablets and phones */
+    }
+    
+    .planlist1, .planlist2 {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers items */
+    }
+
+    .viewDetails, .buyNow {
+        width: 100%; /* Full width buttons for better touch interaction */
+        margin: 5px 0; /* Adds space between buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .planText h2 {
+        font-size: 20px; /* Adjusts font size for smaller screens */
+    }
+
+    .planText p {
+        font-size: 14px; /* Adjusts font size for smaller screens */
+    }
+
+    .viewDetails, .buyNow {
+        font-size: 14px; /* Adjusts font size for smaller screens */
+        padding: 8px; /* Adjusts padding for smaller screens */
+    }
+}
