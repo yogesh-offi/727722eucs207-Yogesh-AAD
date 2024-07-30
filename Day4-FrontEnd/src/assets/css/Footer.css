@@ -1,0 +1,124 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows sections to wrap to new lines on smaller screens */
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    color: aliceblue;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 200px; /* Ensures a minimum width for each section */
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section address {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 18px;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+
+    .footer-section h2 {
+        font-size: 16px;
+    }
+
+    .footer-section p, .footer-section ul, .footer-section address {
+        font-size: 13px;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section h2 {
+        font-size: 15px;
+    }
+
+    .footer-section p, .footer-section ul, .footer-section address {
+        font-size: 12px;
+    }
+
+    .social-links a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 15px;
+    }
+
+    .footer-section {
+        min-width: auto;
+        margin: 5px 0;
+    }
+
+    .footer-section h2 {
+        font-size: 14px;
+    }
+
+    .footer-section p, .footer-section ul, .footer-section address {
+        font-size: 12px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .social-links a {
+        font-size: 14px;
+    }
+}
