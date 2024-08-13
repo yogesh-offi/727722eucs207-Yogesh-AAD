@@ -1,0 +1,102 @@
+/* Institutions.css */
+
+/* Overall page styling */
+.institutions-page {
+    font-family: 'Arial', sans-serif;
+    /* background-color: #f4f4f4; */
+    padding: 20px;
+
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Container for institutions section */
+.institutions-container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.institutions-title, .plans-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styling */
+.institution-form, .plan-form {
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+.institution-input, .plan-input {
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styling */
+.institution-button, .plan-button, .edit-plan-button, .delete-plan-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.institution-button:hover, .plan-button:hover, .edit-plan-button:hover, .delete-plan-button:hover {
+    background-color: #0056b3;
+}
+
+/* List styling */
+.institutions-list, .plans-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.institution-item, .plan-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.manage-plans-button {
+    background-color: #28a745;
+    padding: 8px 12px;
+}
+
+.manage-plans-button:hover {
+    background-color: #218838;
+}
+
+.edit-plan-button, .delete-plan-button {
+    background-color: #dc3545;
+}
+
+.edit-plan-button:hover, .delete-plan-button:hover {
+    background-color: #c82333;
+}
+
+/* Plan details */
+.plan-details {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}

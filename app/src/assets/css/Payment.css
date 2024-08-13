@@ -1,0 +1,125 @@
+.PaymentTotal {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: Poppins;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.PaymentForm {
+    width: 500px;
+    height: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: -80px;
+    padding-top: 100px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+}
+
+.PaymentForm .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+    font-family: Poppins;
+    color: black;
+    width: 350px;
+}
+
+.CardYear {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid year;
+    gap: 23px;
+}
+
+.CardYear .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+    font-family: Poppins;
+    color: black;
+    width: 60px;
+}
+
+#PayBut {
+    height: 40px;
+    width: 100px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+.cardbox {
+    width: 350px;
+    height: 200px;
+    border: 1px solid black;
+    z-index: 1;
+    background-image: url('D:\AAD\app\src\assets\images\cardimg.jpg');
+    border-radius: 5px;
+    background-size: 200%;
+}
+
+/* Styles for icons and text */
+.cardbox i {
+    color: white;
+    font-size: 40px;
+    margin-right: -230px;
+    margin-top: 10px;
+}
+
+.cardbox h4 {
+    color: white;
+    font-family: Abel;
+    margin-top: -30px;
+    margin-left: -180px;
+}
+
+.cardnumber {
+    color: white;
+    width: 90%;
+    height: 30px;
+    margin-left: 4%;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+.cardholder {
+    width: 40%;
+    height: 30px;
+    margin-left: 50px;
+    color: white;
+    text-align: start;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+.Expiryyear {
+    text-align: start;
+    width: 25%;
+    height: 30px;
+    margin-top: -31px;
+    margin-left: 250px;
+    color: white;
+    font-size: 15px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+
+.cardnumber.highlighted,
+.cardholder.highlighted {
+    border: 1px solid blue;
+    background-color: rgba(0, 0, 255, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+}

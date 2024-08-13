@@ -1,0 +1,75 @@
+{
+  "UserData": [
+    {
+      "id": "1",
+      "uname": "yogesh",
+      "email": "yogesh@",
+      "password": "yogesh",
+      "Role": "Admin",
+      "plans": []
+    },
+    {
+      "id": "2",
+      "uname": "Vishwa",
+      "email": "Vishwa@gmail.com",
+      "password": "12345",
+      "Role": "User",
+      "plans": [
+        {}
+      ]
+    },
+    {
+      "id": "3",
+      "uname": "sivakumar",
+      "email": "siva@gmail.com",
+      "password": "siva",
+      "Role": "User",
+      "plans": [
+        {
+          "id": 2,
+          "name": "Yoga For Beginners",
+          "price": 499,
+          "time": "05:00 pm - 06:00 pm",
+          "image": "/static/media/plan2.b8f261323d9106a5276d.webp"
+        },
+        {
+          "id": 1,
+          "name": "Quick Bite Yoga",
+          "price": 999,
+          "time": "05:30 am - 06:15 am",
+          "image": "/static/media/plan1.dad550f54a7b6e821ad7.webp"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "uname": "yogi",
+      "email": "yogesh@",
+      "password": "123456",
+      "Role": "User",
+      "plans": [
+        {}
+      ]
+    },
+    {
+      "id": "5",
+      "uname": "sunil",
+      "email": "sunil@gmail.com",
+      "password": "sunil12345",
+      "Role": "User",
+      "plans": [
+        {}
+      ]
+    },
+    {
+      "id": "6",
+      "uname": "surya",
+      "email": "surya@gmail.com",
+      "password": "surya@12345",
+      "Role": "User",
+      "plans": [
+        {}
+      ]
+    }
+  ]
+}
